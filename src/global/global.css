@@ -1,0 +1,139 @@
+:root {
+  --rad-gap: 16px;
+  --rad-gap-negative: -16px;
+  --rad-gap-half: 8px;
+  --rad-gap-half-negative: -8px;
+  --rad-gap-quarter: 4px;
+  --rad-gap-quarter-negative: -4px;
+  --rad-gap-double: 32px;
+  --rad-gap-double-negative: -32px;
+  --rad-page-margin: 16px;
+  --rad-page-width: 750px;
+  --rad-page-width-with-margin: 782px;
+  --rad-breakpoint-mobile: 600px;
+  --rad-breakpoint-tablet: 960px;
+  --rad-radius: 5px;
+  --rad-marketing-radius: 8px;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  --font-mono: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+  --header-height: 64px;
+  --header-border-bottom: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+  --header-background: hsla(0, 0%, 100%, 0.8);
+  --rad-form-large-font: 1rem;
+  --rad-form-large-height: 3rem;
+  --rad-form-large-line-height: 1.5rem;
+  --rad-form-small-font: 0.875rem;
+  --rad-form-small-height: 2rem;
+  --rad-form-small-line-height: 0.875rem;
+  --rad-form-font: 0.875rem;
+  --rad-form-height: 2.5rem;
+  --rad-form-line-height: 1.25rem;
+
+  --black: #000;
+  --white: #fff;
+
+  --gray-1: #f7fafc;
+  --gray-2: #edf2f7;
+  --gray-3: #e2e8f0;
+  --gray-4: #cbd5e0;
+  --gray-5: #a0aec0;
+  --gray-6: #718096;
+  --gray-7: #4a5568;
+  --gray-8: #2d3748;
+  --gray-9: #1a202c;
+
+  --red-1: #fff5f5;
+  --red-2: #fed7d7;
+  --red-3: #feb2b2;
+  --red-4: #fc8181;
+  --red-5: #f56565;
+  --red-6: #e53e3e;
+  --red-7: #c53030;
+  --red-8: #9b2c2c;
+  --red-9: #742a2a;
+
+  --orange-1: #fffaf0;
+  --orange-2: #feebc8;
+  --orange-3: #fbd38d;
+  --orange-4: #f6ad55;
+  --orange-5: #ed8936;
+  --orange-6: #dd6b20;
+  --orange-7: #c05621;
+  --orange-8: #9c4221;
+  --orange-9: #7b341e;
+}
+
+.dark-theme .invert-theme,
+:root {
+  --rad-foreground: var(--black);
+  --rad-background: var(--white);
+  --rad-link-color: var(--rad-success);
+  --rad-marketing-gray: #fafbfc;
+  --rad-success-light: #3291ff;
+  --rad-success: #48bb78;
+  --rad-success-dark: #0366d6;
+  --rad-error-light: var(--red-5);
+  --rad-error: var(--red-7);
+  --rad-error-dark: var(--red-9);
+  --rad-warning-light: #f7b955;
+  --rad-warning: #f5a623;
+  --rad-warning-dark: #f49b0b;
+  --rad-secondary-light: var(--gray-3);
+  --rad-secondary: var(--gray-5);
+  --rad-secondary-dark: var(--gray-7);
+  --dropdown-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.02);
+  --dropdown-triangle-stroke: #fff;
+  --scroller-start: #fff;
+  --scroller-end: hsla(0, 0%, 100%, 0);
+  --shadow-smallest: 0px 4px 8px rgba(0, 0, 0, 0.12);
+  --shadow-small: 0 5px 10px rgba(0, 0, 0, 0.12);
+  --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.12);
+  --shadow-large: 0 30px 60px rgba(0, 0, 0, 0.12);
+  --shadow-hover: 0 30px 60px rgba(0, 0, 0, 0.12);
+  --shadow-sticky: 0 12px 10px -10px rgba(0, 0, 0, 0.12);
+  --portal-opacity: 0.25;
+}
+
+.dark-theme,
+.invert-theme {
+  --rad-foreground: var(--white);
+  --rad-background: var(--black);
+  --gray-9: #f7fafc;
+  --gray-8: #edf2f7;
+  --gray-7: #e2e8f0;
+  --gray-6: #cbd5e0;
+  --gray-5: #a0aec0;
+  --gray-4: #718096;
+  --gray-3: #4a5568;
+  --gray-2: #2d3748;
+  --gray-1: #1a202c;
+  --rad-success-light: #3291ff;
+  --rad-success: #0070f3;
+  --rad-success-dark: #0366d6;
+  --rad-error-light: #f33;
+  --rad-error: red;
+  --rad-error-dark: #e60000;
+  --rad-warning-light: #f7b955;
+  --rad-warning: #f5a623;
+  --rad-warning-dark: #f49b0b;
+  --rad-secondary-light: var(--gray-3);
+  --rad-secondary: var(--gray-5);
+  --rad-secondary-dark: var(--gray-7);
+  --rad-link-color: var(--rad-foreground);
+  --rad-marketing-gray: var(--gray-1);
+  --dropdown-box-shadow: 0 0 0 1px var(--gray-2);
+  --dropdown-triangle-stroke: #333;
+  --scroller-start: #000;
+  --scroller-end: transparent;
+  --header-background: rgba(0, 0, 0, 0.5);
+  --header-border-bottom: inset 0 -1px 0 0 hsla(0, 0%, 100%, 0.1);
+  --shadow-small: 0 0 0 1px var(--gray-2);
+  --shadow-medium: 0 0 0 1px var(--gray-2);
+  --shadow-large: 0 0 0 1px var(--gray-2);
+  --shadow-sticky: 0 0 0 1px var(--gray-2);
+  --shadow-hover: 0 0 0 1px var(--rad-foreground);
+  --portal-opacity: 0.75;
+}

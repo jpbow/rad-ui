@@ -1,0 +1,42 @@
+:host .wrapper {
+  align-items: center;
+  background: var(--rad-background);
+  border-radius: 5px;
+  border: 1px solid var(--gray-3);
+  display: inline-flex;
+  height: calc(1.688 * var(--rad-gap));
+  position: relative;
+  transition: border 0.2s ease 0s, color 0.2s ease 0s;
+  width: 100%;
+  -moz-box-align: center;
+
+  &:focus-within {
+    border: 1px solid var(--gray-6);
+  }
+
+  .input-wrapper {
+    display: block;
+    margin: 4px 10px;
+    position: relative;
+    width: 100%;
+
+    input {
+      background-color: transparent;
+      border-radius: 0;
+      border: medium none;
+      box-shadow: none;
+      box-sizing: border-box;
+      caret-color: var(--rad-foreground);
+      color: var(--rad-foreground);
+      display: block;
+      font-family: var(--font-sans);
+      font-size: 14px;
+      line-height: 26px;
+      outline: currentcolor none 0;
+      padding: 0;
+      text-overflow: ellipsis;
+      width: 100%;
+      -moz-appearance: none;
+    }
+  }
+}
